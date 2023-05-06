@@ -1,0 +1,40 @@
+<!--
+    Capturar - Dados de Entrada;
+    Input - Entrada;
+    Action - Define para qual URL será enviado os dados,  vazio envia para mesma pasta URL (Necessita de uma Ling. Programação)
+    Submit -  Ao ser clicado, essa funçao sabe que tem que serem enviados os dados (Para uma Linguagem de Programção)
+    Method = Método (Toda vez que envia os dados (envia a busca para ter retorno buscado com o Servidor))
+       GET - Envia dados atráves da URL; 
+       POST - Envia dados invisíveis para o Servidor;
+    EncType= Deve ser informado no tipo de formulário quando for optato pelo tipo 'File'. Irá informar ao servidor que será enviados além dos dados; alguns arquivos.
+
+-->
+
+<form action="" method="get" enctype="multipart/form-data">
+
+<h1>Digite seu Endereço</h1>
+
+<label>
+    Rua:
+<input type="text" name="rua" autocomplete="street-address">
+</label>
+
+<label>
+    Número:
+<input type="number" name="número" autocomplete="address-line3">
+</label>
+
+<label>
+    E-mail:
+<input type="email" name="e-mail" autocomplete="email">
+</label>
+
+<label>
+    Arquivo:
+<input type="file" name="arquvio">
+</label>
+
+    <button type="submit">Enviar Dados</button>
+    <button type="reset">Reset</button>
+
+</form>
